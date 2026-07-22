@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Skateboard Answer Button",
+  "version": "3.0.0",
+  "description": "Shows an eyes button when skateboard.svg is present and selects a preconfigured answer.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.wayground.com/*",
+        "https://*.quizizz.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
